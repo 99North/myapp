@@ -15,9 +15,14 @@ function FormHandlling() {
     // handleChange is the function which is used to handle the change in the input fields.
     const handleChange = (e) => {
         // e.target.name is the name of the input field which is targeted by the onChange event.
+
         // e.target.value is the value of the input field which is targeted by the onChange event whatever the user inputs.
+
         // ...formData is the spread operator which is used to copy the existing formData object.
+
         // [e.target.name]: e.target.value is the new value of the input field which is targeted by the onChange event whatever the user inputs. If a single input field is targeted then it is accessed by [e.target.name] but if multiple input fields are targeted then it is accessed by [e.target.name] and [e.target.value]
+
+        // e.target.value retrieves the current value of the form field. Whatever user enter in the box will be picked up by e.target.name and e.target.value will retrive that value
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
